@@ -1,6 +1,3 @@
-# Java-OO
-
-
 Faça um program que leia o nome e a nota de vários alunos,
 diga se o aluno foi aprovado, e no final mostre o nome do aluno com maior nota.
 
@@ -14,3 +11,7 @@ Classe: Aluno
 
 3º - Identificar Métodos?
 - verificar se está aprovado
+
+4º - Criar Construtores
+
+5º - Criar Métodos de acessos
