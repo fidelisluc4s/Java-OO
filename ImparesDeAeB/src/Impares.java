@@ -2,11 +2,10 @@ import java.util.ArrayList;
 
 public class Impares{
 
-    private int numeroA, numeroB;
-    private ArrayList<Integer> numerosImpares;
+    private int numeroA, numeroB;    
 
-    public Impares(){        
-        numerosImpares = new ArrayList<>();
+    public Impares(){      
+        
     }
 
     public void setNumeroA(int numeroA){
@@ -23,30 +22,28 @@ public class Impares{
 
     public int getNumeroB(){
         return numeroB;
-    }
-
-    public ArrayList<Integer> getNumerosImpares(){
-        return numerosImpares;
-    }
+    }    
 
     public void addImpares(int num){
         numerosImpares.add( num );
     }
 
-    public void oNumerosImpares(){
+    public void obterNumerosImpares(){
 
-        for(int i = numeroA; i <= numeroB; i++){
+        if(numeroA  > numeroB){
+            for(int i = numeroA; i <= numeroB; i++){
             if(i % 2 != 0){
                 numerosImpares.add(i);
             }
         }
-    }
-    public void aNumerosImpares(){
-
-        for(int i = numeroB; i <= numeroA; i++){
+        }else if(numeroB > numeroA){
+            for(int i = numeroB; i <= numeroA; i++){
             if(i % 2 != 0){
                 numerosImpares.add(i);
             }
-        }        
+        }else
+            break;           
+    }
+    
     }
 }
