@@ -15,7 +15,8 @@ public class Principal {
         int numeroB = scanner.nextInt();
         impares.setNumeroB(numeroB);
 
-        impares.obterNumerosImpares(numeroA, numeroB);
+        impares.oNumerosImpares();
+        impares.aNumerosImpares();
 
         ArrayList<Integer> numerosImpares = impares.getNumerosImpares();
         System.out.println("Números ímpares entre " + numeroA + " e " + numeroB + ":");

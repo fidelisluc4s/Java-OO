@@ -24,19 +24,29 @@ public class Impares{
     public int getNumeroB(){
         return numeroB;
     }
+
     public ArrayList<Integer> getNumerosImpares(){
         return numerosImpares;
     }
+
     public void addImpares(int num){
         numerosImpares.add( num );
     }
-    public int obterNumerosImpares(int numeroA, int numeroB){
-        
+
+    public void oNumerosImpares(){
+
         for(int i = numeroA; i <= numeroB; i++){
             if(i % 2 != 0){
                 numerosImpares.add(i);
             }
         }
-        return 0;
+    }
+    public void aNumerosImpares(){
+
+        for(int i = numeroB; i <= numeroA; i++){
+            if(i % 2 != 0){
+                numerosImpares.add(i);
+            }
+        }        
     }
 }
