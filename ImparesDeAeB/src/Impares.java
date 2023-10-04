@@ -3,10 +3,10 @@ import java.util.ArrayList;
 public class Impares{
 
     private int numeroA, numeroB;
-    private ArrayList<Integer> numerosImpares;
+    private ArrayList<Integer> numerosImpares = new ArrayList<>();
 
-    public Impares(){        
-        numerosImpares = new ArrayList<>();
+    public Impares(){       
+
     }
 
     public void setNumeroA(int numeroA){
@@ -23,9 +23,9 @@ public class Impares{
 
     public int getNumeroB(){
         return numeroB;
-    }
+    } 
 
-    public ArrayList<Integer> getNumerosImpares(){
+    public ArrayList<Integer> getNumerosImpares() {
         return numerosImpares;
     }
 
@@ -33,20 +33,20 @@ public class Impares{
         numerosImpares.add( num );
     }
 
-    public void oNumerosImpares(){
-
-        for(int i = numeroA; i <= numeroB; i++){
-            if(i % 2 != 0){
-                numerosImpares.add(i);
+    
+    public void obterNumerosImpares() {
+        if (numeroA > numeroB) {
+            for (int i = numeroB; i <= numeroA; i++) {
+                if (i % 2 != 0) {
+                    numerosImpares.add(i);
+                }
+            }
+        } else if (numeroB > numeroA) {
+            for (int i = numeroA; i <= numeroB; i++) {
+                if (i % 2 != 0) {
+                    numerosImpares.add(i);
+                }
             }
         }
-    }
-    public void aNumerosImpares(){
-
-        for(int i = numeroB; i <= numeroA; i++){
-            if(i % 2 != 0){
-                numerosImpares.add(i);
-            }
-        }        
     }
 }
