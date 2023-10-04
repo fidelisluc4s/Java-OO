@@ -10,14 +10,13 @@ public class Principal {
         impares.setNumeroA(le.nextInt());
 
         System.out.print("Digite o valor de B: ");
-        int numeroB = scanner.nextInt();
-        impares.setNumeroB(numeroB);
+        impares.setNumeroB(le.nextInt());
 
-        impares.oNumerosImpares();
-        impares.aNumerosImpares();
-
+        impares.obterNumerosImpares();       
+        
         ArrayList<Integer> numerosImpares = impares.getNumerosImpares();
-        System.out.println("Números ímpares entre " + numeroA + " e " + numeroB + ":");
+        
+        System.out.println("Números ímpares entre A e B :");
         for (int numero : numerosImpares) {
             System.out.print(" "+numero);
         }
