@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Empresa
+comment1.params=nome
+comment1.target=Empresa(java.lang.String)
+comment2.params=nome
+comment2.target=void\ setNome(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=
+comment4.target=java.util.ArrayList\ getFuncionarios()
+comment5.params=
+comment5.target=double\ folhaPagamento()
+comment6.params=func
+comment6.target=void\ addFuncionario(Funcionario)
+comment7.params=idx
+comment7.target=void\ removeFuncionario(int)
+comment8.params=funcionarios
+comment8.target=void\ setFuncionarios(java.util.ArrayList)
+numComments=9
