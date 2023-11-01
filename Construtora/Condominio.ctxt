@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Condominio
+comment1.params=
+comment1.target=Condominio()
+comment2.params=nome\ endereco
+comment2.target=Condominio(java.lang.String,\ java.lang.String)
+comment3.params=mesAno
+comment3.target=double\ valorCondominio(int)
+comment4.params=imovel\ mesAno
+comment4.target=void\ pagarCondominio(Imovel,\ int)
+comment5.params=
+comment5.target=java.lang.String\ relatorio()
+comment6.params=nome
+comment6.target=void\ setNome(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getNome()
+comment8.params=endereco
+comment8.target=void\ setEndereco(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ getEndereco()
+numComments=10
