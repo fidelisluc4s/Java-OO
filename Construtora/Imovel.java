@@ -15,6 +15,14 @@ public class Imovel
         this.proprietario = proprietario;
     }
     
+    public double valorVenal(){
+        return metrosQuadrados * 1000;
+    }
+    
+    public double valorVenda(){
+        return valorVenal() * 0.85;
+    }
+    
     public void setNumero(int numero){
         this.numero = numero;
     }

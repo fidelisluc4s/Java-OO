@@ -2,4 +2,12 @@
 comment0.target=Apartamento
 comment1.params=
 comment1.target=Apartamento()
-numComments=2
+comment2.params=numero\ metro\ proprietario\ numeroQuartos
+comment2.target=Apartamento(int,\ int,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=double\ valorVenal()
+comment4.params=numeroQuartos
+comment4.target=void\ setNumeroQuartos(int)
+comment5.params=
+comment5.target=int\ getNumeroQuartos()
+numComments=6

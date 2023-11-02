@@ -10,9 +10,11 @@ public class Pagamento
     public Pagamento(){
     }
     
-    public Pagamento(int mesAno,double valorPago){
+    public Pagamento(int mesAno,double valorPago, Imovel imovel, Condominio condominio){
         this.mesAno = mesAno;
         this.valorPago = valorPago;
+        this.imovel = imovel;
+        this.condominio = condominio;
     }
     
     public void setMesAno(int mesAno){

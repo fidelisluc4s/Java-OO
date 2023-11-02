@@ -1,33 +1,34 @@
 
-/**
- * Escreva uma descrição da classe Cobertura aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
- */
-public class Cobertura
+public class Cobertura extends Imovel
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
-
-    /**
-     * Construtor para objetos da classe Cobertura
-     */
-    public Cobertura()
-    {
-        // inicializa variáveis de instância
-        x = 0;
+    private boolean duplex, triplex;
+    
+    public Cobertura(){
+        super(0,0,"");
     }
-
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    
+    public Cobertura(boolean duplex, boolean triplex){
+        super(0,0,"");
+        this.duplex = duplex;
+        this.triplex = triplex;
+    }
+    
+    @Override
+    public double valorVenal(){
+         return super.valorVenal() * (duplex?2:1) * (triplex?3:1);
+    }
+    
+    public void setDuplex(boolean duplex){
+        this.duplex = duplex;
+    }
+    public boolean getDuplex(){
+        return duplex;
+    }
+    
+    public void setTriplex(boolean triplex){
+        this.triplex = triplex;
+    }
+    public boolean getTriplex(){
+        return triplex;
     }
 }
