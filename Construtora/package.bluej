@@ -1,11 +1,11 @@
 #BlueJ package file
-dependency1.from=Imovel
-dependency1.to=Condominio
+dependency1.from=Pagamento
+dependency1.to=Imovel
 dependency1.type=UsesDependency
 dependency2.from=Pagamento
-dependency2.to=Imovel
+dependency2.to=Condominio
 dependency2.type=UsesDependency
-dependency3.from=Pagamento
+dependency3.from=Imovel
 dependency3.to=Condominio
 dependency3.type=UsesDependency
 dependency4.from=Condominio
